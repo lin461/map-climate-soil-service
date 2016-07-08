@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Map</title>
+<title>Map</title>
 
 	<!-- Load Leaflet CSS file from CDN-->
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 
 	<!-- Load Leaflet Draw CSS file from Github-->
-	<link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/leaflet.draw.css"/>
+	<link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/leaflet.draw.css" />
 
 	<!-- Load Leaflet Javascript file from CDN-->
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
@@ -15,20 +16,21 @@
 	<!-- Load Leaflet Draw Javascript file from Github-->
 	<script src="http://leaflet.github.io/Leaflet.draw/leaflet.draw.js"></script>
 
-	<script src = 'climate.js' async defer></script>
+	<script src='climate.js' async defer></script>
 
-	<script src = 'soil.js' async defer></script>
+	<script src='soil.js' async defer></script>
 
-	<script src = 'map.js' async defer></script>
+	<script src='map.js' async defer></script>
 
 	<style>
-		#mapid { 
-			width: 1140px; 
-			height: 800px; 
+		#mapid {
+			width: 1140px;
+			height: 800px;
 			display: inline-block;
 		}
+
 		#status {
-			border: 1px solid ;
+			border: 1px solid;
 			background-color: #C7C6C5;
 			display: inline-block;
 			width: 500px;
@@ -37,11 +39,12 @@
 		}
 	</style>
 </head>
+
 <body>
-	
+
 	<div id="mapid"></div>
 	<pre id="status">This contains climate/soil data from the area you choose!<br>(Circle and marker for climate, polygon and rectangle for soil!)</pre>
-	
-</body>
-</html>
 
+</body>
+
+</html>
