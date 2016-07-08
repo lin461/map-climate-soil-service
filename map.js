@@ -56,7 +56,7 @@ map.on('draw:created', function (e) {
 
 	drawnItems.addLayer(layer);
 
-	if (type === 'marker') {
+	if (type === 'marker' || type === 'circle') {
 		// Do marker specific actions
 		layer.on('click', function(e){
 			//layer.bindPopup("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
@@ -65,7 +65,8 @@ map.on('draw:created', function (e) {
 		//layer.bindPopup('LatLng: ' + layer.getLatLng()).openPopup();
 	}
 
-	if (type === 'polygon') {
+	// if (type is polygon || rectangle) 
+	else {
 		layer.on('click', function(e){
 			//console.log(layer.toGeoJSON());
 			soil_post(layer.toGeoJSON());
