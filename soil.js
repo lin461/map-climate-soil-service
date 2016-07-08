@@ -1,8 +1,7 @@
-
 function soil_post(position) {
     // Create our XMLHttpRequest object
     var xhr = new XMLHttpRequest();
-    // Create some variables we need to send to 
+    // Create some variables we need to send to
     var url = "http://csip.engr.colostate.edu:8083/csip-erosion/d/soils/1.2";
 
     var data = JSON.stringify({
@@ -34,8 +33,7 @@ function soil_post(position) {
                 //alert(return_data);
             }
         }
-    // Send the data now... and wait for response to update the status div
+        // Send the data now... and wait for response to update the status div
     xhr.send(data); // Actually execute the request
     document.getElementById("status").innerHTML = "processing...";
-
 }
