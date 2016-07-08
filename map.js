@@ -56,7 +56,6 @@ map.on('draw:created', function(e) {
     drawnItems.addLayer(layer);
 
     if (type === 'marker' || type === 'circle') {
-        // Do marker specific actions
         layer.on('click', function(e) {
             //layer.bindPopup("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
             climate_post(e.latlng.lat, e.latlng.lng);
